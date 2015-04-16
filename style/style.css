@@ -1,0 +1,190 @@
+@font-face {
+font-family: 'FaceYourFears'; 
+src: url('font/FaceYourFears.ttf');
+font-weight: lighter;
+}
+
+body
+{
+    background-image: url(images/page1.png);
+    background-size: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+/* ------------ Apparence labyrinthe -------------------------------------*/
+
+.mur
+{
+    background-color: white;
+}
+
+
+.pasmur
+{
+    background-color: transparent;
+}
+
+td
+{
+    width: 12px;
+    height: 12px;
+    border: none;
+    padding: 0;
+}
+
+tr
+{
+    border: none;
+    padding: 0;
+}
+
+table
+{
+    border-spacing: 0px;
+    margin: 0 auto;
+}
+
+#labyrinthe {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 372px;
+    height: 372px;
+    overflow: hidden;
+    z-index: 200;
+    
+}
+
+#img{
+    position: absolute;
+    /*
+    margin-top: -1158px;
+    margin-left: -900px;
+    */
+    z-index: 1000;
+}
+
+/* -------------------------TITRE--------------------------------------- */
+h1{
+    font-family:'FaceYourFears';
+    color:rgba(255,255,255,0.9);
+    text-align: center;
+    font-size: 60px;
+    padding: 35px;
+    padding-bottom:;
+    position: relative;
+    font-weight: lighter;
+    margin-top: -1%;
+    margin-bottom: 4%
+}
+
+/*---------------- Apparence objects ------------------------------------*/
+
+.perso
+{
+    background-image: url(images/perso.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.piles
+{
+    background-image: url(images/lampe.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.cle
+{
+    background-image: url(images/cle.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.sortie
+{
+    background-image: url(images/porte.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+/*------------------- Apparence indication niveau ------------------*/
+
+@font-face{
+    font-family : "Futura";
+    src : url(./font/'Futura.ttc');
+}
+#level{
+    margin-left: 490px;
+    font-size: 18px;
+    font-family: 'Futura' sans-serif;
+    font-weight: 700;
+    color: #eaeaea;
+    position: relative;
+    display: inline-block;
+    margin-top: 
+}
+
+
+/*----------------------- Apparence batteries --------------------- */
+
+.batterie{
+    width: 50px;
+    height: auto;
+    display: inline;
+    margin-left: -40px;
+    visibility: hidden;
+}
+
+.batteries{
+    margin-left: 700px;
+    position: absolute;
+    margin-top: -73px;
+    
+}
+
+/*------------------------------- Fin jeu ---------------------------*/
+
+
+#labyrinthe p
+{
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+    font-family: "FaceYourFears";
+    padding-top: 40px
+}
+
+#labyrinthe div
+{
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+    font-family: "FaceYourFears";
+    padding-top: 40px;
+    font-size: 40px;
+}
+
+#butReplay
+{
+    margin-left: 40%;
+    margin-top: 50px;
+    padding: 8px;
+    border-radius: 3px;
+    color: #0a0a0a;
+	background-color: #fbfbfb;
+	text-transform: uppercase;
+    font-family: 'FaceYourFears', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    border: none;
+    background-color: rgba(255,255,255,0.8);
+}
+
+#level
+{
+    font-family: "FaceYourFears";
+    font-weight: lighter;
+    font-size: 28px;
+    padding-left: 45px 
+}
